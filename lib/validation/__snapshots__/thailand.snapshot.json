@@ -1,0 +1,188 @@
+{
+  "slug": "thailand",
+  "capturedAt": "2026-07-31T05:49:07.411Z",
+  "findings": [
+    {
+      "ruleId": "VR-01",
+      "category": "Business Truth",
+      "severity": "FAIL",
+      "kind": "heuristic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-02",
+      "category": "Business Truth",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-03",
+      "category": "Business Truth",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "FAIL"
+    },
+    {
+      "ruleId": "VR-04",
+      "category": "Business Truth",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-05",
+      "category": "Knowledge Objects",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-06",
+      "category": "Knowledge Objects",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-07",
+      "category": "Research",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "FAIL"
+    },
+    {
+      "ruleId": "VR-08",
+      "category": "Research",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-09",
+      "category": "Metadata",
+      "severity": "WARN",
+      "kind": "deterministic",
+      "status": "WARN"
+    },
+    {
+      "ruleId": "VR-10",
+      "category": "SEO",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-11",
+      "category": "SEO",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-12",
+      "category": "Data Integrity",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-13",
+      "category": "Data Integrity",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-14",
+      "category": "Internal Linking",
+      "severity": "WARN",
+      "kind": "heuristic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-15",
+      "category": "Editorial",
+      "severity": "WARN",
+      "kind": "heuristic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-16",
+      "category": "Editorial",
+      "severity": "FAIL",
+      "kind": "heuristic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-17",
+      "category": "Editorial",
+      "severity": "WARN",
+      "kind": "deterministic",
+      "status": "WARN"
+    },
+    {
+      "ruleId": "VR-18",
+      "category": "Schema",
+      "severity": "FAIL",
+      "kind": "requires-future-architecture",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "ruleId": "VR-19",
+      "category": "Schema",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-20",
+      "category": "Schema",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-21",
+      "category": "Schema",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "FAIL"
+    },
+    {
+      "ruleId": "VR-22",
+      "category": "Schema",
+      "severity": "FAIL",
+      "kind": "deterministic",
+      "status": "FAIL"
+    },
+    {
+      "ruleId": "VR-23",
+      "category": "GEO",
+      "severity": "WARN",
+      "kind": "heuristic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-24",
+      "category": "GEO",
+      "severity": "WARN",
+      "kind": "deterministic",
+      "status": "WARN"
+    },
+    {
+      "ruleId": "VR-25",
+      "category": "GEO",
+      "severity": "WARN",
+      "kind": "heuristic",
+      "status": "PASS"
+    },
+    {
+      "ruleId": "VR-26",
+      "category": "GEO",
+      "severity": "WARN",
+      "kind": "deterministic",
+      "status": "PASS"
+    }
+  ]
+}
