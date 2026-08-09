@@ -1,0 +1,359 @@
+:root {
+  --navy: #003366;
+  --blue: #1D4ED8;
+  --blue-hover: #1E40AF;
+  --blue-50: #E6F1FB;
+
+  --white: #FFFFFF;
+  --surface: #F8FAFC;
+
+  --text: #1F2937;
+  --text-light: #64748B;
+
+  --border: #E5E7EB;
+
+  --success: #198754;
+  --success-bg: #EAF6EF;
+  --warning: #F59E0B;
+  --warning-bg: #FEF6E9;
+  --error: #DC3545;
+  --error-bg: #FDECEE;
+
+  --font-display: var(--font-sora), 'Sora', sans-serif;
+  --font-body: var(--font-inter), 'Inter', sans-serif;
+  --font-mono: var(--font-mono-jb), 'JetBrains Mono', monospace;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --max-width: 1280px;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 32px rgba(0, 51, 102, 0.10);
+  --shadow-card: 0 1px 2px rgba(15,23,42,0.04), 0 8px 24px rgba(15,23,42,0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--navy);
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(1.9rem, 6vw, 3.5rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 64px 0;
+  }
+}
+
+.section-kicker-blue {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 16px;
+}
+
+.section-kicker-blue::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: var(--blue);
+}
+
+.card-elevated {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+.field-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-light);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 1px 2px rgba(29, 78, 216, 0.15);
+}
+
+.btn-primary:hover {
+  background: var(--blue-hover);
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--navy);
+  border-color: var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--navy);
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   MOBILE OPTIMIZATION LAYER
+   Additive, mobile-scoped rules. Desktop rendering is unchanged
+   except for the fluid h1/h2 clamps above (same desktop caps).
+   ============================================================ */
+
+/* 1. Horizontal-overflow safety net. `clip` (not `hidden`) prevents
+   any stray wide/absolute element from creating page-wide horizontal
+   scroll while keeping the sticky header working. */
+html, body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+/* 2. Tighter container gutters on small screens = more content room. */
+@media (max-width: 480px) {
+  .container { padding: 0 20px; }
+}
+@media (max-width: 360px) {
+  .container { padding: 0 16px; }
+}
+
+/* 3. Slightly tighter vertical rhythm on phones. */
+@media (max-width: 480px) {
+  .section { padding: 56px 0; }
+}
+
+/* 4. Prevent iOS Safari auto-zoom on input focus: controls must be
+   >= 16px. !important is needed to beat the inline font-sizes on the
+   form controls; desktop is untouched (rule is mobile-scoped). */
+@media (max-width: 480px) {
+  input, select, textarea { font-size: 16px !important; }
+}
+
+/* 5. Comfortable minimum tap target for buttons on touch layouts. */
+@media (max-width: 880px) {
+  .btn { min-height: 44px; }
+}
+
+/* 6. Phone country-code menu: on phones, match the field width and
+   pin to both edges so the fixed 280px width can't push past the
+   viewport at 320px. */
+@media (max-width: 440px) {
+  .phone-code-menu {
+    width: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+/* 7. Trim heavy card padding on small screens so inputs, the category
+   grid, and pricing content get breathing room. */
+@media (max-width: 560px) {
+  .apply-card { padding: 20px !important; }
+}
+@media (max-width: 480px) {
+  .apply-card { padding: 16px !important; }
+  .eligibility-card { padding: 20px !important; }
+  .plan-card { padding: 24px 20px !important; }
+}
+
+/* 8. Trim the homepage hero vertical padding on phones. */
+@media (max-width: 480px) {
+  .home-hero { padding-top: 40px !important; padding-bottom: 44px !important; }
+}
+
+/* 9. Hero badge row. Base layout lives here (not inline) so the mobile
+   overrides below aren't fighting an inline flex-wrap value. */
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 36px;
+}
+/* On phones, shrink + no-wrap so all three tags sit on one line. */
+@media (max-width: 480px) {
+  .hero-tags {
+    gap: 7px !important;
+    margin-top: 24px !important;
+    flex-wrap: nowrap !important;
+  }
+  .hero-tags .field-tag {
+    font-size: 10.5px !important;
+    padding: 3px 7px !important;
+    white-space: nowrap !important;
+  }
+}
+/* Very narrow screens (<340px): allow wrapping rather than overflow. */
+@media (max-width: 340px) {
+  .hero-tags { flex-wrap: wrap !important; }
+}
+
+/* 10. "What this service is" block: lighter and easier on the eye on
+   phones — less padding, smaller label, tighter spacing, calmer text. */
+@media (max-width: 480px) {
+  .positioning-section { padding-bottom: 36px !important; }
+  .positioning-box { padding: 20px 18px !important; }
+  .positioning-box .section-kicker-blue {
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+  .positioning-grid { gap: 14px !important; margin-top: 14px !important; }
+  .positioning-grid p { font-size: 13.5px !important; line-height: 1.55; }
+}
+
+/* 11. Navy trust strip: on phones, centre the items and show three of
+   them (hide the fourth) for a cleaner, balanced stack. */
+@media (max-width: 600px) {
+  .trust-strip {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+  }
+  .trust-strip > div:nth-child(4) { display: none !important; }
+}
+
+/* 12. Seal emblem + wordmark: readable on desktop, compact on phones so
+   the logo never crowds the menu button. Wordmark is uppercase. */
+.seal-emblem {
+  width: clamp(40px, 11vw, 56px);
+  height: auto;
+  flex-shrink: 0;
+}
+.brand-wordmark {
+  font-size: clamp(14px, 4vw, 18px);
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .brand-lockup { gap: 9px !important; }
+}
